@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Edem Sedzoame</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Edem<span>.Dev</span></a>
+                <div class="hamburger">☰</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 120px; padding-bottom: 80px;">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <p class="section-subtitle fade-in">Have a project in mind? Let's discuss.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <div class="contact-info-item">
+                        <h4>Email Me</h4>
+                        <p>edemsedzoame@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Location</h4>
+                        <p>Accra, Ghana | Open to Remote & On-Site Opportunities</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Connect</h4>
+                        <div class="social-links" style="justify-content: flex-start; margin-top: 10px;">
+                            <a href="https://www.linkedin.com/in/edem-sedzoame-01666736b/">LinkedIn</a>
+                            <a href="https://github.com/Edem-Sed">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in" id="contactForm" action="https://formspree.io/f/xkovpeeo" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">&copy; 2026 Edem Sedzoame. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
