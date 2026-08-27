@@ -4,275 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Edem Sedzoame</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header">
+
+    <header>
         <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <span class="logo-accent">E</span>dem Sedzoame
-                </div>
-                <div class="nav-menu">
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="services.html" class="active">Services</a></li>
-                        <li><a href="skills.html">Expertise</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+            <nav>
+                <a href="index.html" class="logo">Edem<span>.Dev</span></a>
+                <div class="hamburger">☰</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Services Header -->
-    <section class="services-hero">
-        <div class="container">
-            <div class="services-header-content">
-                <div class="breadcrumb">
-                    <a href="index.html">Home</a> / <span>Services</span>
-                </div>
-                <h1 class="services-title">Professional Services</h1>
-                <p class="services-description">
-                    Comprehensive backend development and WordPress solutions tailored to your business needs.
-                </p>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="container" style="padding-top: 120px; padding-bottom: 80px;">
+            <h2 class="section-title fade-in">Services</h2>
+            <p class="section-subtitle fade-in">How I can help you build your digital infrastructure.</p>
 
-    <!-- Services Grid -->
-    <section class="section services-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What I Offer</h2>
-                <p class="section-subtitle">Specialized development services for businesses and startups</p>
-            </div>
             <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="service-title">Backend Development</h3>
-                    <p class="service-description">
-                        Custom backend solutions using Node.js, Express, and MongoDB. I build robust, 
-                        scalable APIs and server-side applications tailored to your business requirements.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> RESTful API Development</li>
-                        <li><i class="fas fa-check"></i> Microservices Architecture</li>
-                        <li><i class="fas fa-check"></i> Real-time Applications</li>
-                        <li><i class="fas fa-check"></i> Database Design & Optimization</li>
-                    </ul>
-                    <div class="service-footer">
-                        <span class="service-price">Starting at $1,500</span>
-                        <a href="contact.html" class="btn btn-outline btn-sm">Get Quote</a>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Backend API Development</h3>
+                    <p>Building robust, secure, and scalable RESTful APIs using Node.js and Express tailored to your business logic.</p>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <i class="fab fa-wordpress"></i>
-                    </div>
-                    <h3 class="service-title">WordPress Development</h3>
-                    <p class="service-description">
-                        Complete WordPress solutions from custom theme development to plugin creation 
-                        and website optimization. Professional, high-performance WordPress sites.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Custom Theme Development</li>
-                        <li><i class="fas fa-check"></i> Plugin Development</li>
-                        <li><i class="fas fa-check"></i> Website Migration & Setup</li>
-                        <li><i class="fas fa-check"></i> Performance & Security Optimization</li>
-                    </ul>
-                    <div class="service-footer">
-                        <span class="service-price">Starting at $1,200</span>
-                        <a href="contact.html" class="btn btn-outline btn-sm">Get Quote</a>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🗄️</div>
+                    <h3>Database Design</h3>
+                    <p>Efficient MongoDB schema design and integration to ensure data integrity and fast retrieval speeds.</p>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 class="service-title">Database Design & Management</h3>
-                    <p class="service-description">
-                        Efficient database architecture and implementation using MongoDB with Mongoose. 
-                        Scalable database schemas that support your application's growth and performance.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Schema Design & Modeling</li>
-                        <li><i class="fas fa-check"></i> Data Migration & Integration</li>
-                        <li><i class="fas fa-check"></i> Query Optimization</li>
-                        <li><i class="fas fa-check"></i> Backup & Recovery Planning</li>
-                    </ul>
-                    <div class="service-footer">
-                        <span class="service-price">Starting at $800</span>
-                        <a href="contact.html" class="btn btn-outline btn-sm">Get Quote</a>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🚀</div>
+                    <h3>Server Deployment</h3>
+                    <p>Setup and configuration of production environments on cloud platforms like Heroku, Vercel, or AWS.</p>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="service-title">API Security & Authentication</h3>
-                    <p class="service-description">
-                        Implementing robust security measures for your APIs including authentication, 
-                        authorization, rate limiting, and data protection to keep your applications secure.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> JWT Authentication</li>
-                        <li><i class="fas fa-check"></i> OAuth Integration</li>
-                        <li><i class="fas fa-check"></i> Input Validation & Sanitization</li>
-                        <li><i class="fas fa-check"></i> Security Best Practices</li>
-                    </ul>
-                    <div class="service-footer">
-                        <span class="service-price">Starting at $1,000</span>
-                        <a href="contact.html" class="btn btn-outline btn-sm">Get Quote</a>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🛒</div>
+                    <h3>eCommerce Solutions</h3>
+                    <p>Full backend implementation for online stores including cart logic, payments, and inventory management.</p>
                 </div>
 
-                <!-- Service 5 -->
-                <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3 class="service-title">Performance Optimization</h3>
-                    <p class="service-description">
-                        Optimizing backend performance and WordPress sites for speed and efficiency. 
-                        Ensuring your applications load quickly and handle high traffic volumes.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Code Optimization</li>
-                        <li><i class="fas fa-check"></i> Caching Strategies</li>
-                        <li><i class="fas fa-check"></i> Database Query Optimization</li>
-                        <li><i class="fas fa-check"></i> CDN Integration</li>
-                    </ul>
-                    <div class="service-footer">
-                        <span class="service-price">Starting at $900</span>
-                        <a href="contact.html" class="btn btn-outline btn-sm">Get Quote</a>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🔧</div>
+                    <h3>Hardware Repairs</h3>
+                    <p>Professional diagnosis and repair of computer hardware components and peripherals.</p>
                 </div>
 
-                <!-- Service 6 -->
-                <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3 class="service-title">Maintenance & Support</h3>
-                    <p class="service-description">
-                        Ongoing maintenance and support services to keep your applications running smoothly. 
-                        Regular updates, bug fixes, and performance monitoring.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Regular Updates & Patches</li>
-                        <li><i class="fas fa-check"></i> Bug Fixes & Troubleshooting</li>
-                        <li><i class="fas fa-check"></i> Performance Monitoring</li>
-                        <li><i class="fas fa-check"></i> 24/7 Support Options</li>
-                    </ul>
-                    <div class="service-footer">
-                        <span class="service-price">Starting at $500/month</span>
-                        <a href="contact.html" class="btn btn-outline btn-sm">Get Quote</a>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">📹</div>
+                    <h3>CCTV Installation</h3>
+                    <p>Installation and configuration of security camera systems for homes and businesses.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Process Section -->
-    <section class="section process-section">
+    <footer>
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Development Process</h2>
-                <p class="section-subtitle">A structured approach to delivering quality solutions</p>
-            </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h4 class="step-title">Discovery & Planning</h4>
-                    <p class="step-description">Understanding your requirements and defining project scope</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h4 class="step-title">Design & Architecture</h4>
-                    <p class="step-description">Creating technical specifications and system architecture</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h4 class="step-title">Development</h4>
-                    <p class="step-description">Building and testing the application with clean code</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h4 class="step-title">Deployment</h4>
-                    <p class="step-description">Launching the application and ensuring smooth operation</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <h4 class="step-title">Support & Maintenance</h4>
-                    <p class="step-description">Ongoing support and continuous improvements</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to Start Your Project?</h2>
-                <p class="cta-description">Let's discuss your requirements and create a custom solution for your business.</p>
-                <a href="contact.html" class="btn btn-primary btn-large">Schedule a Consultation</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4 class="footer-title">Edem Sedzoame</h4>
-                    <p class="footer-text">Backend Developer & WordPress Specialist</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="skills.html">Expertise</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title">Contact Info</h4>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> edem@email.com</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Edem Sedzoame. All rights reserved.</p>
-            </div>
+            <p class="footer-text">&copy; 2026 Edem Sedzoame. All rights reserved.</p>
         </div>
     </footer>
 

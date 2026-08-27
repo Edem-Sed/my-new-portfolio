@@ -4,232 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Edem Sedzoame</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header">
+
+    <header>
         <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <span class="logo-accent">E</span>dem Sedzoame
-                </div>
-                <div class="nav-menu">
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="skills.html">Expertise</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+            <nav>
+                <a href="index.html" class="logo">Edem<span>.Dev</span></a>
+                <div class="hamburger">☰</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Contact Header -->
-    <section class="contact-hero">
-        <div class="container">
-            <div class="contact-header-content">
-                <div class="breadcrumb">
-                    <a href="index.html">Home</a> / <span>Contact</span>
-                </div>
-                <h1 class="contact-title">Get In Touch</h1>
-                <p class="contact-description">
-                    Let's work together on your next project. I'm here to answer your questions.
-                </p>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="container" style="padding-top: 120px; padding-bottom: 80px;">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <p class="section-subtitle fade-in">Have a project in mind? Let's discuss.</p>
 
-    <!-- Contact Section -->
-    <section class="section contact-section">
-        <div class="container">
-            <div class="contact-container">
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <h3 class="form-title">Send Me a Message</h3>
-                    <p class="form-description">Fill out the form below and I'll get back to you as soon as possible.</p>
-                    
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name <span class="required">*</span></label>
-                                <input type="text" id="name" name="name" required placeholder="Your name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address <span class="required">*</span></label>
-                                <input type="email" id="email" name="email" required placeholder="Your email">
-                            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <div class="contact-info-item">
+                        <h4>Email Me</h4>
+                        <p>edemsedzoame@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Location</h4>
+                        <p>Accra, Ghana | Open to Remote & On-Site Opportunities</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Connect</h4>
+                        <div class="social-links" style="justify-content: flex-start; margin-top: 10px;">
+                            <a href="https://www.linkedin.com/in/edem-sedzoame-01666736b/">LinkedIn</a>
+                            <a href="https://github.com/Edem-Sed">GitHub</a>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject <span class="required">*</span></label>
-                            <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
-                        </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="terms" name="terms" required>
-                            <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                    </form>
+                    </div>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="contact-info-wrapper">
-                    <h3 class="info-title">Contact Information</h3>
-                    <p class="info-description">Feel free to reach out through any of the following channels:</p>
-                    
-                    <div class="info-cards">
-                        <div class="info-card">
-                            <div class="info-card-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <h4 class="info-card-title">Email</h4>
-                            <p class="info-card-text">edem@email.com</p>
-                            <p class="info-card-text">backend.dev@email.com</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-card-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <h4 class="info-card-title">Phone</h4>
-                            <p class="info-card-text">+1 (555) 123-4567</p>
-                            <p class="info-card-text">Available 9 AM - 6 PM PST</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-card-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h4 class="info-card-title">Location</h4>
-                            <p class="info-card-text">San Francisco, CA</p>
-                            <p class="info-card-text">Available for remote work worldwide</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-card-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <h4 class="info-card-title">Working Hours</h4>
-                            <p class="info-card-text">Monday - Friday: 9 AM - 6 PM</p>
-                            <p class="info-card-text">Saturday: 10 AM - 2 PM</p>
-                        </div>
+                <form class="contact-form fade-in" id="contactForm" action="https://formspree.io/f/xkovpeeo" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Map Section -->
-    <section class="section map-section">
+    <footer>
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Location</h2>
-                <p class="section-subtitle">Based in San Francisco, California</p>
-            </div>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.038328253876!2d-122.41562212382567!3d37.77492957159183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Links -->
-    <section class="section social-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Connect With Me</h2>
-                <p class="section-subtitle">Follow me on social media and professional networks</p>
-            </div>
-            <div class="social-links-large">
-                <a href="#" class="social-profile">
-                    <div class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <div class="social-info">
-                        <h4>GitHub</h4>
-                        <p>View my code repositories</p>
-                    </div>
-                </a>
-                <a href="#" class="social-profile">
-                    <div class="social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <div class="social-info">
-                        <h4>LinkedIn</h4>
-                        <p>Professional network</p>
-                    </div>
-                </a>
-                <a href="#" class="social-profile">
-                    <div class="social-icon">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                    <div class="social-info">
-                        <h4>Twitter</h4>
-                        <p>Latest updates and insights</p>
-                    </div>
-                </a>
-                <a href="#" class="social-profile">
-                    <div class="social-icon">
-                        <i class="fab fa-stack-overflow"></i>
-                    </div>
-                    <div class="social-info">
-                        <h4>Stack Overflow</h4>
-                        <p>Technical Q&A participation</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4 class="footer-title">Edem Sedzoame</h4>
-                    <p class="footer-text">Backend Developer & WordPress Specialist</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="skills.html">Expertise</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 class="footer-title">Contact Info</h4>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> edem@email.com</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Edem Sedzoame. All rights reserved.</p>
-            </div>
+            <p class="footer-text">&copy; 2026 Edem Sedzoame. All rights reserved.</p>
         </div>
     </footer>
 
