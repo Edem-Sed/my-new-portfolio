@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edem Sedzoame | Backend Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <span class="logo-accent">Edem</span>Sedzoame
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="skills.html">Expertise</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon"><i class="fas fa-code"></i></span>
+                    <span>Backend Developer</span>
+                </div>
+                <h1 class="hero-title">
+                    Building <span class="text-accent">Scalable</span> Web Solutions
+                    with <span class="text-accent">Node.js</span> & <span class="text-accent">WordPress</span>
+                </h1>
+                <p class="hero-description">
+                    I specialize in creating robust backend architectures and custom WordPress solutions 
+                    that drive business growth and deliver exceptional user experiences.
+                </p>
+                <div class="hero-actions">
+                    <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                    <a href="contact.html" class="btn btn-outline">Schedule a Call</a>
+                    <a href="assests/Edem Sedzoame CV.pdf" class="btn btn-outline" download>Download CV</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Satisfied Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-visualization">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code class="language-javascript">// Express Server Setup
+const express = require('express');
+const mongoose = require('mongoose');
+const app = express();
+
+// Connect to MongoDB
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+// Define API Routes
+app.use('/api', require('./routes'));
+
+// Start Server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About My Work</h2>
+                <p class="section-subtitle">Professional background and approach to development</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3 class="about-title">Backend Development Expertise</h3>
+                    <p class="about-text">
+                        With over 3 years of experience in backend development, I specialize in building 
+                        scalable, high-performance web applications using the Node.js ecosystem. My focus 
+                        is on creating clean, maintainable code that solves real business problems.
+                    </p>
+                    <p class="about-text">
+                        I work extensively with Express.js for building RESTful APIs and MongoDB with 
+                        Mongoose for database management. My approach emphasizes security, performance, 
+                        and code quality throughout the development lifecycle.
+                    </p>
+                    <div class="about-highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert in Node.js, Express, and Mongoose</span>
+                    </div>
+                    <div class="about-highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>RESTful API design and implementation</span>
+                    </div>
+                    <div class="about-highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Database architecture and optimization</span>
+                    </div>
+                </div>
+                <div class="about-image">
+    <img src="images/profile pic.jpeg" alt="Dem Sed" class="about-photo">
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="section expertise-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Expertise</h2>
+                <p class="section-subtitle">Technologies and frameworks I work with</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="card-title">Node.js</h3>
+                    <p class="card-description">Server-side JavaScript runtime for building scalable applications</p>
+                    <div class="card-footer">
+                        <span class="badge">Expert</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Express.js</h3>
+                    <p class="card-description">Web application framework for building robust APIs</p>
+                    <div class="card-footer">
+                        <span class="badge">Expert</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="card-title">MongoDB & Mongoose</h3>
+                    <p class="card-description">NoSQL database and ODM for efficient data management</p>
+                    <div class="card-footer">
+                        <span class="badge">Expert</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3 class="card-title">WordPress</h3>
+                    <p class="card-description">Custom theme and plugin development for content management</p>
+                    <div class="card-footer">
+                        <span class="badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="card-title">API Security</h3>
+                    <p class="card-description">Authentication, authorization, and data protection</p>
+                    <div class="card-footer">
+                        <span class="badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="card-title">Performance Optimization</h3>
+                    <p class="card-description">Code optimization and database query improvements</p>
+                    <div class="card-footer">
+                        <span class="badge">Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Build Something Amazing?</h2>
+                <p class="cta-description">Let's discuss your project and create a solution that meets your business needs.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">Edem Sedzoame</h4>
+                    <p class="footer-text">Backend Developer & WordPress Specialist</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="skills.html">Expertise</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> edem@email.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Edem Sedzoame. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
